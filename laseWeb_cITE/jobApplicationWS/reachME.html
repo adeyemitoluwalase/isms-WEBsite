@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REACH ME</title>
+    <style>
+        .overlayBox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            z-index: 1;
+        }
+        .mmerechiHolder {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 650px;
+            background-color: white;
+            z-index: 2;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            padding: 20px 0;
+            position: relative;
+            z-index: 2;
+        }
+        .navbar li {
+            margin: 0 15px;
+        }
+
+        .navbar a {
+            padding: 5px 15px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        main {
+            flex: 1;
+            padding: 3rem 1rem;
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 3;
+        }
+        form {
+            background: black;
+            padding: 2rem 3rem;
+            border-radius: none;
+            width: 100%;
+            max-width: 500px;
+            margin: auto;
+            z-index: 4;
+            position: relative;
+        }
+        form label {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: white;
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: 1.5rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border-radius: none;
+            font-size: 1rem;
+        }
+        form input:focus, form textarea:focus {
+            border-color: whitesmoke;
+            outline: none;
+            box-shadow: 0 0 10px whitesmoke;
+        }
+        form textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        form button {
+            background-color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: black;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: none;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        form button:hover {
+            font-family: 'Courier New', Courier, monospace;
+            border-color: whitesmoke;
+            outline: none;
+            box-shadow: 0 0 10px whitesmoke;
+            background-color: black;
+            color: white;
+        }
+        @media (max-width: 600px) {
+            #stuff p{
+                position: relative;
+                top: 50px;
+                font-size: 50px;
+            }
+            form{
+                width: 70%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="overlayBox"></div>
+    <div class="mmerechiHolder"></div>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html" target="_parent">This is me.</a></li>
+                <li><a href="profileandSkills.html" target="_parent">Who am I?</a></li>
+                <li><a href="proJECTS.html" target="_parent">What I do.</a></li>
+                <li class="active"><a href="reachME.html" target="_parent">Contact me.</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="mailto:toluwalaseadeyemi4pf@gmail.com" method="POST" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="Name" required />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="Email" required />
+            <label for="message">Message:</label>
+            <textarea id="message" name="Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </main>
+</body>
+</html>

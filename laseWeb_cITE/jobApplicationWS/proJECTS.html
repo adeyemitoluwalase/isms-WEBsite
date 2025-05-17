@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What I do.</title>
+  </head>
+  <style>
+    .overlayBox {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      z-index: 1;
+    }
+    .mmerechiHolder {
+      display: flex;
+      position: fixed;
+      align-items: center;
+      justify-content: center;
+      top: 0;
+      flex-direction: column;
+      bottom: 0;
+      left: 50%;
+      padding: 20px;
+      transform: translateX(-50%);
+      width: 800px;
+      height: 100vh;
+      overflow: hidden;
+      background-color: white;
+      box-sizing: border-box;
+      z-index: 2;
+    }
+    .navbar {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 20px 0;
+        position: relative;
+        z-index: 2;
+    }
+    .navbar li {
+        margin: 0 2px;
+    }
+
+    .navbar a {
+        padding: 5px 15px;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+    .styroFoAm{
+      text-align: center;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 85px;
+      color: black;
+      background-color:white; 
+      z-index: 2;
+      position: relative;
+      margin: 1;
+      top: -30px;
+      line-height: 1
+    }
+    .projectsGrid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 10px;
+      width: 100%;
+      max-width: 100%;
+      color: black;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      box-sizing: border-box;
+      position: relative;
+      z-index: 2;
+      justify-items: center;
+      align-items: center;
+    }
+    .projectItem, .projectItem.bottom {
+      width: 240px;
+      height: 160px;
+      aspect-ratio: 1 / 1;
+      overflow: hidden;
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    .projectItem img, .projectItem.bottom img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .projectItem p {
+      position: absolute;
+      bottom: -30px;
+      width: 100%;
+      text-align: center;
+      color: white;
+      font-size: 0.75em;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 4px 6px;
+    }
+    .projectItem.bottom {
+     margin-top: 10px;
+    width: calc(100% / 3);
+    }
+  </style>
+  <body>
+    <div class="mmerechiHolder"></div>
+    <div class="overlayBox"></div>
+      <header>
+          <nav>
+            <ul class="navbar">
+              <li><a href="index.html" target="_parent">This is me.</a></li>
+              <li><a href="profileandSkills.html" target="_parent">Who am I?</a></li>
+              <li><a href="proJECTS.html" target="_parent">What I do.</a></li>
+              <li><a href="reachME.html" target="_parent">Contact me.</a></li>
+            </ul>
+          </nav>
+      </header>
+      <h1 class="styroFoAm">What I've done</h1>
+      <div class="projectsGrid">
+        <div class="projectItem">
+          <img src="IMG_1685.jpeg">
+        </div>
+        <div class="projectItem">
+          <img src="IMG_1700.jpeg">
+        </div>
+        <div class="projectItem">
+          <img src="IMG_1725.jpeg">
+        </div>
+        <div class="projectItem">
+          <img src="IMG_1977.jpeg">
+        </div>
+        <div class="projectItem">
+          <img src="IMG_5865.jpeg">
+        </div>
+        <div class="projectItem">
+          <img src="IMG_5866.jpeg">
+        </div>
+      </div>
+  </body>
+</html>

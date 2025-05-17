@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is me.</title>
+    <style>
+        .overlayBox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            z-index: 1;
+        }
+        .mmerechiHolder {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 500px;
+            background-color: white;
+            z-index: 2;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 10px 0;
+            position: relative;
+            z-index: 2;
+        }
+        .navbar li {
+            margin: 0 2px;
+        }
+        .navbar a {
+            padding: 5px 15px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .whatI_DO {
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 110px;
+            color: black;
+            z-index: 2;
+            position: relative;
+            margin: 1;
+            top: -35px;
+            line-height: 1;
+        }
+        h2, h4 {
+            text-align: center;
+            font-family: 'Verdana';
+            z-index: 2;
+            position: relative;
+        }
+        .badge_1d h2 {
+            display: flexbox;
+            position: relative;
+            background-color: black;
+            display: inline-block;
+            padding: 10px 10px;
+            left: 50%;
+            top: 280px;
+            z-index: 2;
+            position: relative;
+            color: white;
+            font-size: 35px;
+            margin: 0;
+        }
+        .badge_1d h4 {
+            display: flexbox;
+            position: relative;
+            background-color: black;
+            display: inline-block;
+            padding: 5px 5px;
+            left: 28%;
+            top: 330px;
+            z-index: 2;
+            position: relative;
+            color: white;
+            font-size: 20px;
+            margin: 0;
+        }
+        .whatI_DO b {
+            letter-spacing: 10px;
+        }
+        .whatI_DO + .whatI_DO {
+            margin-top: -70px;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 300px;
+            z-index: 2;
+            position: relative;
+        }
+        .Me {
+            position: absolute;
+            z-index: 2;
+            top: 30%;
+            left: 36.9%;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlayBox"></div>
+    <div class="mmerechiHolder"></div>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li class="active"><a href="index.html" target="_parent">This is me</a></li>
+                <li><a href="profileandSkills.html" target="_parent">Who am I?</a></li>
+                <li><a href="proJECTS.html" target="_parent">What I do.</a></li>
+                <li><a href="reachME.html" target="_parent">Contact me.</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+            <h1 class="whatI_DO">THIS IS</h1>
+            <h1 class="whatI_DO">ME.</h1>
+            <img class="Me" src="3d1775e8-f4df-47bf-bc61-21e22dea00f7_removalai_preview.png" style="width: 500px; height: auto;" alt="Tuoyo from I.T.!" title="TUOYO FROM I.T.!">
+
+            <div class="badge_1d">
+                <h2>Adeyemi Toluwalase</h2>
+                <h4>Graphics Designer</h4>
+            </div>
+    </div>
+</body>
+</html>
